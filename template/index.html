@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hệ thống nhận dạng Logo xe</title>
+        
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            body{
+                font-family: Arial;
+            }
+            .KhungChua{
+                display: grid;
+                grid-template-areas: 
+                'phai trai';
+            }
+            .BenNhanDang{
+                background-color: rgb(133, 133, 133);
+                grid-area: 'phai';
+                width: 100vw;
+                height: 100vh;
+            }
+            .BenTimThongTin{
+                display: none;
+                background-color: dimgrey;
+                grid-area: 'trai';
+            }
+            .nhanAnhDauVao{
+                display: block;
+                height: 35vh;
+                background-color: rgb(40, 42, 43);
+            }
+            .tieude{
+                text-align: center;
+                padding-top: 5vh;
+                color: aliceblue;
+            }
+            .NoiNhanAnh{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #fileImage{
+                display: none;
+            }
+            .chonteptin{
+                display: block;
+                margin: 3vh 0 2vh 0;
+                background-color: yellow;
+                padding: 2vw 7vw 2vw 7vw;
+                border-radius: 5px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 600;
+                font-size: 20px;
+                z-index: 0;
+            }
+            .chonteptin:hover{
+                background-color: rgb(255, 217, 0);
+                border: solid rgb(16, 141, 243) 3px;
+            }
+            .DuDoanAnhDauVao{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .HienThiAnhDauRa{
+                margin-top: 3vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="KhungChua">
+            <div class="BenNhanDang">
+                <div class="nhanAnhDauVao">
+                    <h2 class="tieude">Hệ thống nhận dạng hãng xe ô tô</h2>
+                    <div class="NoiNhanAnh">
+                        <form action="/" method="post">
+                            
+                        </form>
+                        <label for="fileImage" class="chonteptin">Chọn ảnh</label>
+                        <input type="file" id="fileImage" value=""/>
+                    </div>
+                    <p style="text-align: center; color: aliceblue; z-index: 10;">Chỉ hỗ trợ tệp tin: .png, .jpg</p>
+                </div>
+                <div class="DuDoanAnhDauVao">
+                    <h2 class="tieude"> Kết quả nhận diện:</h2>
+                    <div>
+                        <p>-----</p>
+                    </div>
+                    <div class="HienThiAnhDauRa">
+                        <img src="imageEmpty.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="BenTimThongTin">
+                Tìm kiếm
+            </div>
+        </div>
+    </body>
+    <script>
+        //Sự kiện chọn file
+        
+    </script>
+</html>
