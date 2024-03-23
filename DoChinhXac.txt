@@ -1,3 +1,4 @@
+    ---EPOCH: 30 - BS: 32 ---
 CNN:            64.49%
 InceptionV3:    74.99%
 MobileNet:      86.83%
