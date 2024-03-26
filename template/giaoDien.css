@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: Arial;
+}
+.KhungChua{
+    display: grid;
+    grid-template-areas: 
+    'phai trai';
+}
+.BenNhanDang{
+    background-color: rgb(133, 133, 133);
+    grid-area: 'phai';
+    width: 100vw;
+    height: 100vh;
+}
+.BenTimThongTin{
+    display: none;
+    background-color: dimgrey;
+    grid-area: 'trai';
+}
+.nhanAnhDauVao{
+    display: block;
+    height: 35vh;
+    background-color: rgb(40, 42, 43);
+}
+.tieude{
+    text-align: center;
+    padding-top: 5vh;
+    color: aliceblue;
+}
+.NoiNhanAnh{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fileImage{
+    display: none;
+}
+.chonteptin{
+    display: block;
+    margin: 3vh 0 2vh 0;
+    background-color: yellow;
+    padding: 2vw 7vw 2vw 7vw;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 0;
+}
+.chonteptin:hover{
+    background-color: rgb(255, 217, 0);
+    border: solid rgb(16, 141, 243) 3px;
+}
+.DuDoanAnhDauVao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HienThiAnhDauRa{
+    margin-top: 3vh;
+}
+.AnhDauRa{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5px;
+}

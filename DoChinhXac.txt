@@ -1,5 +1,7 @@
+    ---EPOCH: 30 - BS: 32 ---
 CNN:            64.49%
 InceptionV3:    74.99%
 MobileNet:      86.83%
 Lenet:          60.65%
 VGG16:
+VGG19:          84.00%
